@@ -6,7 +6,19 @@ export default function Home() {
     <div className="flex flex-col h-screen justify-between">
       <Header />
       <main className="mb-auto h-10 bg-green-500 h-full">
-        Content
+        <div>
+          <div>
+
+          </div>
+          <div>
+            <div>
+
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
         </main>
       <Footer />
     </div>
