@@ -22,10 +22,10 @@ export default function Home() {
         className={`mb-auto h-10 bg-black-500 h-full ${inter.className} p-0 xl:p-7`}
       >
         <div className="flex flex-row xl:m-4  h-max flex-auto flex-wrap">
-          <div className="xl:mr-2 p-1.5 xl:mt-24 mt-0 h-auto">
+          <div className="xl:mr-2 p-1.5 xl:mt-24 mt-0 h-auto ">
             <TiltImage url="/wallpaper.jpeg" />
           </div>
-          <div className="flex flex-col xl:w-1/3 w-56 p-1.5 w-11/12">
+          <div className="flex flex-col xl:w-1/3  p-1.5 w-11/12">
             <motion.div
               animate={{ x: xValue }}
               transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
@@ -34,7 +34,7 @@ export default function Home() {
                 Dino AR
               </div>
               <div className="p-1.5 xl:text-xl xl:mt-24 text-base text-left  w-full">
-                <p className=" px-8 w-11/12 xl:px-0">
+                <p className=" px-8  xl:px-0">
                   Dino AR is an augmented reality programme that lets users
                   visualise dinosaurs in their surroundings using a marker.
                   Users can access details about several dinosaurs on the web
