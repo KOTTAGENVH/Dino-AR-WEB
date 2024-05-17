@@ -1,3 +1,5 @@
+import Footer from '@/components/footer'
+import Header from '@/components/header'
 import React from 'react'
 
 function Legal() {
@@ -9,7 +11,11 @@ function Legal() {
         backgroundColor: 'red',
     }}
     >
-        page
+      <Header/>
+      <div>
+      page
+      </div>
+        <Footer/>
         </div>
   )
 }
