@@ -24,7 +24,7 @@ export default function Home() {
                   Dino AR is an augmented reality application that allows users
                   to view dinosaurs in their own environment. Users can choose
                   from a variety of dinosaurs and place them in their
-                  surroundings. The application uses the device's camera to
+                  surroundings. The application uses the device camera to
                   create a realistic experience.
                 </p>
               </div>
