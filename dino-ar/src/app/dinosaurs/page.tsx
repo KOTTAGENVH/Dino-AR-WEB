@@ -37,6 +37,30 @@ function Dinosaurs() {
     trexRef,
   ];
 
+  const imageURL = [
+    "/background-images/archaeopteryx.jpeg",
+    "/background-images/animated_t_rex.png",
+    "/background-images/flying_pteradactal.png",
+    "/background-images/godzilla_amphibia.jpeg",
+    "/background-images/stego.jpeg",
+    "/background-images/suchominus.jpeg",
+    "/background-images/ticeratops_skeleton.jpeg",
+    "/background-images/ticeratops.jpeg",
+    "/background-images/trex.jpeg",
+  ];
+
+  const text = [
+    "Archaeopteryx",
+    "Animated T-Rex",
+    "Flying Pteradactal",
+    "Godzilla Amphibia",
+    "Stego",
+    "Suchominus",
+    "Ticeratops Skeleton",
+    "Ticeratops",
+    "T-Rex",
+  ];
+
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       const currentTime = new Date().getTime();
@@ -44,24 +68,31 @@ function Dinosaurs() {
 
       if (timeDiff > 1000) {
         const deltaY = event.deltaY;
-        const currentSectionIndex = sectionRefs.findIndex(ref => {
+        const currentSectionIndex = sectionRefs.findIndex((ref) => {
           const section = ref.current;
           if (!section) return false;
           const { top, bottom } = section.getBoundingClientRect();
-          return top <= window.innerHeight / 2 && bottom >= window.innerHeight / 2;
+          return (
+            top <= window.innerHeight / 2 && bottom >= window.innerHeight / 2
+          );
         });
 
         if (currentSectionIndex !== -1) {
           let newSectionIndex: number;
           if (deltaY > 0) {
             // Scrolling down
-            newSectionIndex = Math.min(sectionRefs.length - 1, currentSectionIndex + 1);
+            newSectionIndex = Math.min(
+              sectionRefs.length - 1,
+              currentSectionIndex + 1
+            );
           } else {
             // Scrolling up
             newSectionIndex = Math.max(0, currentSectionIndex - 1);
           }
 
-          sectionRefs[newSectionIndex].current?.scrollIntoView({ behavior: "smooth" });
+          sectionRefs[newSectionIndex].current?.scrollIntoView({
+            behavior: "smooth",
+          });
           lastScrollTime.current = currentTime;
         }
       }
@@ -76,7 +107,11 @@ function Dinosaurs() {
   return (
     <div>
       <Header />
-      <DotNavigation sectionRefs={sectionRefs} />
+      <DotNavigation
+        sectionRefs={sectionRefs}
+        imageURL={imageURL}
+        text={text}
+      />
       <div ref={archaeopteryxRef} className="h-screen">
         <Archaeopteryx />
       </div>
@@ -110,4 +145,3 @@ function Dinosaurs() {
 }
 
 export default Dinosaurs;
-
