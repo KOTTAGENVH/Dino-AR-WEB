@@ -2,7 +2,7 @@ import React from 'react'
 
 function Stego() {
   return (
-    <div className="bg-stego bg-cover  h-full w-full">
+    <div className="bg-stego bg-cover bg-left h-full w-full">
       </div>
   )
 }
