@@ -22,7 +22,7 @@ function Legal() {
             product.
             <br />
             2. All the images in the Dino-Ar web and ios app were sourced from
-            Google and weren't liscened during the time of use.
+            Google and was not liscened during the time of use.
             <br />
             3. Ar model were sourced from Sketch fab and Turbo Squid during the
             time of use.
