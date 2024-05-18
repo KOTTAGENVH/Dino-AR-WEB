@@ -20,6 +20,7 @@ const config: Config = {
         'ticeratops_skeleton': "url('/background-images/ticeratops_skeleton.jpeg')",
         'ticeratops': "url('/background-images/ticeratops.jpeg')",
         'trex': "url('/background-images/trex.jpeg')",
+        'mosasaurus': "url('/background-images/mosasaurus.jpeg')",
         'marker':"url('/markers/marker.png')",
         'marker1':"url('/markers/marker1.jpg')",
         'marker2':"url('/markers/marker2.png')",

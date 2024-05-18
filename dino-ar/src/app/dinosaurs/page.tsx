@@ -12,12 +12,14 @@ import Ticeratops_skeleton from "@/components/dinosaurs/ticeratops_skeleton";
 import Ticeratops from "@/components/dinosaurs/ticeratops";
 import Trex from "@/components/dinosaurs/trex";
 import DotNavigation from "@/components/dot_navigation";
+import Mosasaurus from "@/components/dinosaurs/mosasaurus";
 
 function Dinosaurs() {
   const archaeopteryxRef = useRef<HTMLDivElement>(null);
   const animatedTrexRef = useRef<HTMLDivElement>(null);
   const flying_pteradactalRef = useRef<HTMLDivElement>(null);
   const godzilla_amphibiaRef = useRef<HTMLDivElement>(null);
+  const mosasaurusRef = useRef<HTMLDivElement>(null);
   const stegoRef = useRef<HTMLDivElement>(null);
   const suchominusRef = useRef<HTMLDivElement>(null);
   const ticeratops_skeletonRef = useRef<HTMLDivElement>(null);
@@ -30,6 +32,7 @@ function Dinosaurs() {
     animatedTrexRef,
     flying_pteradactalRef,
     godzilla_amphibiaRef,
+    mosasaurusRef,
     stegoRef,
     suchominusRef,
     ticeratops_skeletonRef,
@@ -42,6 +45,7 @@ function Dinosaurs() {
     "/background-images/animated_t_rex.png",
     "/background-images/flying_pteradactal.png",
     "/background-images/godzilla_amphibia.jpeg",
+    "/background-images/mosasaurus.jpeg",
     "/background-images/stego.jpeg",
     "/background-images/suchominus.jpeg",
     "/background-images/ticeratops_skeleton.jpeg",
@@ -54,6 +58,7 @@ function Dinosaurs() {
     "Animated T-Rex",
     "Flying Pteradactal",
     "Godzilla Amphibia",
+    "Mosasaurus",
     "Stego",
     "Suchominus",
     "Ticeratops Skeleton",
@@ -123,6 +128,9 @@ function Dinosaurs() {
       </div>
       <div ref={godzilla_amphibiaRef} className="h-screen">
         <Godzilla_amphibia />
+      </div>
+      <div ref={mosasaurusRef} className="h-screen">
+        <Mosasaurus />
       </div>
       <div ref={stegoRef} className="h-screen">
         <Stego />
