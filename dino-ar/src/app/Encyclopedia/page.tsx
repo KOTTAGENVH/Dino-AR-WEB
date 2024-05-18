@@ -37,12 +37,13 @@ function Encyclopedia(){
 
   return (
     <div>
-      <div ref={homeRef} style={{ height: "100vh" }}>
+      {/* <div ref={homeRef} style={{ height: "100vh" }}>
         <Archaeopteryx />
       </div>
       <div ref={legalRef} style={{ height: "100vh" }}>
         <AnimatedTrex />
-      </div>
+      </div> */}
+      <Archaeopteryx />
     </div>
   );
 };
