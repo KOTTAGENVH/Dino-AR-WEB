@@ -2,7 +2,9 @@ import React from 'react'
 
 function Archaeopteryx() {
   return (
-    <div>archaeopteryx</div>
+    <div className="bg-archaeopteryx bg-cover  h-full w-full">
+      
+    </div>
   )
 }
 

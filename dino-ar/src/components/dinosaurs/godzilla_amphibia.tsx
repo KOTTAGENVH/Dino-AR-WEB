@@ -2,7 +2,8 @@ import React from 'react'
 
 function Godzilla_amphibia() {
   return (
-    <div>G</div>
+    <div className="bg-godzilla_amphibia bg-cover  h-full w-full">
+      </div>
   )
 }
 

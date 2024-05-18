@@ -2,7 +2,8 @@ import React from 'react'
 
 function Ticeratops() {
   return (
-    <div>T</div>
+    <div className="bg-ticeratops bg-cover  h-full w-full">
+    </div>
   )
 }
 

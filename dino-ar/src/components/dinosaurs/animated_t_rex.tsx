@@ -2,7 +2,8 @@ import React from 'react'
 
 function AnimatedTrex() {
   return (
-    <div>animated_t_rex</div>
+    <div className="bg-animated_t_rex bg-cover  h-full w-full">
+      </div>
   )
 }
 

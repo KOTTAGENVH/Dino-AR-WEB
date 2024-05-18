@@ -2,7 +2,8 @@ import React from 'react'
 
 function Trex() {
   return (
-    <div>trex</div>
+    <div className="bg-trex bg-cover  h-full w-full">
+    </div>
   )
 }
 
