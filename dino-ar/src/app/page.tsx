@@ -45,7 +45,7 @@ export default function Home() {
                 </p>
               </div>
               <button className="p-1.5 bg-sky-700 lg:bg-black-500 text-white mt-16 xl:mt-24 hover:bg-teal-700 rounded-xl">
-                <a href="/encyclopedia">
+                <a href="/dinosaurs">
                   Time Travel <span className="ml-1">&#8594;</span>
                 </a>
               </button>
