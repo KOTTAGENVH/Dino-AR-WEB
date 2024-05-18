@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import AnimatedTrex from "@/components/dinosaurs/animated_t_rex";
 import Archaeopteryx from "@/components/dinosaurs/archaeopteryx";
 
-const Page: React.FC = () => {
+function Encyclopedia(){
   const homeRef = useRef<HTMLDivElement>(null);
   const legalRef = useRef<HTMLDivElement>(null);
   const lastScrollTime = useRef<number>(0);
@@ -47,5 +47,5 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default Encyclopedia;
 
