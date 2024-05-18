@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ticeratops_skeleton() {
+function Ticeratops_skeleton() {
   return (
-    <div>ticeratops_skeleton</div>
+    <div>T</div>
   )
 }
 
-export default ticeratops_skeleton
+export default Ticeratops_skeleton

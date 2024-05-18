@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ticeratops() {
+function Ticeratops() {
   return (
-    <div>ticeratops</div>
+    <div>T</div>
   )
 }
 
-export default ticeratops
+export default Ticeratops

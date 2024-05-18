@@ -1,9 +1,9 @@
 import React from 'react'
 
-function suchominus() {
+function Suchominus() {
   return (
-    <div>suchominus</div>
+    <div>S</div>
   )
 }
 
-export default suchominus
+export default Suchominus

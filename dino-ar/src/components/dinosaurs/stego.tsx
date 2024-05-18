@@ -1,9 +1,9 @@
 import React from 'react'
 
-function stego() {
+function Stego() {
   return (
-    <div>stego</div>
+    <div>S</div>
   )
 }
 
-export default stego
+export default Stego

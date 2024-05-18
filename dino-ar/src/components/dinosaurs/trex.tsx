@@ -1,9 +1,9 @@
 import React from 'react'
 
-function trex() {
+function Trex() {
   return (
     <div>trex</div>
   )
 }
 
-export default trex
+export default Trex
