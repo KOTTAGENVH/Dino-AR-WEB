@@ -19,7 +19,8 @@ export default function Home() {
     <div className="flex flex-col h-screen justify-between">
       <Header />
       <main
-        className={`mb-auto h-10 bg-black-500 h-full ${inter.className} p-0 xl:p-7`}
+        className={`flex-grow mb-auto bg-black-500 ${inter.className} p-0 xl:p-7`}
+        
       >
         <div className="flex flex-row xl:m-4  h-max flex-auto flex-wrap">
           <div className="xl:mr-2 p-1.5 xl:mt-24 mt-0 h-auto ">
