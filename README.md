@@ -1,4 +1,4 @@
-# Dino-AR-WEB
+![Demo](https://github.com/KOTTAGENVH/Dino-AR-WEB/assets/87430226/b2b9a0e7-09b3-437b-ae32-211bb55bddbc)# Dino-AR-WEB
 >This is webisite for Dino-AR which is a mini encyclopedia of 6 dinosaurs with AR markers 
 >>
 >Youtube Demo Link:
@@ -12,4 +12,5 @@
 >
 <img width="1670" alt="Screenshot 2024-05-19 at 02 15 57" src="https://github.com/KOTTAGENVH/Dino-AR-WEB/assets/87430226/214a7451-e7b9-4c43-ad94-aeec73358943">
 >
-![Demo](https://github.com/KOTTAGENVH/Dino-AR-WEB/assets/87430226/4425b5ba-3107-424e-b3fc-efe2f4186499)
+
+![Demo](https://github.com/KOTTAGENVH/Dino-AR-WEB/assets/87430226/ae0c9639-e931-4be7-a0a9-a4aaa7c6beca)
