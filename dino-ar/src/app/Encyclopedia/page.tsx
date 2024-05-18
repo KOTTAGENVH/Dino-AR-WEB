@@ -4,9 +4,9 @@ import AnimatedTrex from "@/components/dinosaurs/animated_t_rex";
 import Archaeopteryx from "@/components/dinosaurs/archaeopteryx";
 
 function Encyclopedia(){
-  const homeRef = useRef<HTMLDivElement>(null);
-  const legalRef = useRef<HTMLDivElement>(null);
-  const lastScrollTime = useRef<number>(0);
+  // const homeRef = useRef<HTMLDivElement>(null);
+  // const legalRef = useRef<HTMLDivElement>(null);
+  // const lastScrollTime = useRef<number>(0);
 
   // useEffect(() => {
   //   const handleScroll = (event: WheelEvent) => {
