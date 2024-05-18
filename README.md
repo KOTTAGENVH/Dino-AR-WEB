@@ -3,7 +3,7 @@
 >>
 >Youtube Demo Link:
 >>
->Dino-AR Web Link:
+>Dino-AR Web Link:https://dino-ar-teal.vercel.app/dinosaurs
 >>
 >Dino-AR App Store Link:
 >>
