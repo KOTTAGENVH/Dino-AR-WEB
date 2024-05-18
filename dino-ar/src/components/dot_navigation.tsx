@@ -53,14 +53,6 @@ const DotNavigation: React.FC<DotNavigationProps> = ({
           onClick={() => ref.current?.scrollIntoView({ behavior: "smooth" })}
         >
           <div className="relative w-full h-full">
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <img
-                src="/dinoAr.jpg"
-                alt="Image"
-                className="w-6 h-6 rounded-full"
-              />
-              <span className="ml-2 text-white">Text</span>
-            </div>
             {isHovered && index === activeSectionIndex && (
               <div className="absolute inset-0 flex rounded-full border-2 border-blue-500 items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                 <img
@@ -72,10 +64,7 @@ const DotNavigation: React.FC<DotNavigationProps> = ({
               </div>
             )}
 
-            {!isHovered && index === activeSectionIndex && (
-              <div className="absolute inset-0 rounded-full border-4 border-blue-500 " />
-            )}
-            {index != activeSectionIndex && (
+            {isHovered && index != activeSectionIndex && (
               <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                 <Image
                   src={imageURL[index]}
@@ -85,6 +74,29 @@ const DotNavigation: React.FC<DotNavigationProps> = ({
                   height={24}
                 />
                 <span className="ml-2 text-white">{text[index]}</span>
+              </div>
+            )}
+
+            {!isHovered && index === activeSectionIndex && (
+              <div className="absolute inset-0 rounded-full border-4 border-blue-500 ">
+                <Image
+                  src={imageURL[index]}
+                  alt="Image"
+                  className="xl:w-8 xl:h-6 w-4 h-2 rounded-full  "
+                  width={24}
+                  height={24}
+                />
+              </div>
+            )}
+            {!isHovered && index != activeSectionIndex && (
+              <div className="absolute inset-0 rounded-full  ">
+                <Image
+                  src={imageURL[index]}
+                  alt="Image"
+                  className="xl:w-8 xl:h-8 w-4 h-4 rounded-full  "
+                  width={24}
+                  height={24}
+                />
               </div>
             )}
           </div>
