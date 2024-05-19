@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <Head>
-        <link rel="icon" href="/dinoAr.jpg" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/dinoAr.jpg" />
       </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}
