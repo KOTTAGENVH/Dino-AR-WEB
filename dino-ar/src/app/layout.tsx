@@ -30,7 +30,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="icon" href="dino-ar/public/image/favicon.ico" sizes="any" />
+        <link rel="icon" href="/image/favicon.ico" sizes="any" />
         {children}
       </body>
     </html>
