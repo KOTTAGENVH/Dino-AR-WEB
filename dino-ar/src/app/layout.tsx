@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <Head>
+        <link rel="icon" href="/dinoAr.jpg" sizes="any" />
+      </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}
         <script
@@ -30,7 +33,6 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="icon" href="/dinoAr.jpg" sizes="any" />
         {children}
       </body>
     </html>
