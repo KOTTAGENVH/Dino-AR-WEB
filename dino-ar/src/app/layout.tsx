@@ -18,9 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <Head>
-    <link rel="icon" href="/icon_images/favicon.ico" />
-      </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}
         <script
@@ -33,6 +30,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <link rel="icon" href="dino-ar/public/image/favicon.ico" sizes="any" />
         {children}
       </body>
     </html>
