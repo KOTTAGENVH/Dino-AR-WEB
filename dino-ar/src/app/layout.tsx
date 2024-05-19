@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <Head>
-    <link rel="icon" type="image/svg+xml" href="dino-ar/public/dinoAr.jpg" />
+    <link rel="icon" href="/icon?<generated>" type="dinoAr.jpg" sizes="32x32" />
       </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}
