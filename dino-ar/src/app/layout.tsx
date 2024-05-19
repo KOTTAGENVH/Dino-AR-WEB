@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dino-AR",
   description: "Established in 2024",
-  metadataBase: new URL('https://dino-ar-teal.vercel.app'),
+  metadataBase: new URL("https://dino-ar-teal.vercel.app"),
 };
 
 export default function RootLayout({
@@ -19,8 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <link rel="icon" href="/dinoAr.jpg" sizes="any" />
-        {children}</body>
+        {/*Ban inspect elements*/}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener("contextmenu", function(event) {
+                event.preventDefault();
+                alert("Inspect Elements Not Allowed!");
+              });
+            `,
+          }}
+        />
+        <link rel="icon" href="/dinoAr.jpg" sizes="any" />
+        {children}
+      </body>
     </html>
   );
 }
