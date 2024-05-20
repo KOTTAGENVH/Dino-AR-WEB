@@ -11,6 +11,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://dino-ar-web.vercel.app"),
 };
 
+const structuredData = {
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Dino-AR",
+  "url": "https://dino-ar-web.vercel.app",
+  "description": "Established in 2024",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dino-ar-web.vercel.app/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+  // Add other properties as needed
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,13 +40,19 @@ export default function RootLayout({
         <link rel="canonical" href="https://dino-ar-web.vercel.app" />
         <link rel="icon" href="/image/favicon.ico" sizes="any" />
         <title>Dino-AR</title>
-        
+
         {/* Open Graph Meta Tags for social media */}
         <meta property="og:title" content="Dino-AR" />
         <meta property="og:description" content="Established in 2024" />
         <meta property="og:url" content="https://dino-ar-web.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://dino-ar-web.vercel.app/dinosaurs" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}

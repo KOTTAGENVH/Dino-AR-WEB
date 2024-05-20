@@ -12,7 +12,7 @@ const TiltImage: React.FC<TiltImageProps> = ({ url }) => {
 
   if (!url || typeof url !== "string") {
     console.error("Invalid Image URL");
-    return null; 
+    return null;
   }
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -43,7 +43,7 @@ const TiltImage: React.FC<TiltImageProps> = ({ url }) => {
       }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
-      <Image src={url} alt="T-Rex" width={900} height={100} draggable="false" />
+      <Image src={url} alt="T-Rex" width={900} height={100} draggable="false" itemProp="image" />
     </motion.div>
   );
 };

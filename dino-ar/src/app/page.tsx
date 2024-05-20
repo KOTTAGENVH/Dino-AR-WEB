@@ -22,7 +22,7 @@ export default function Home() {
         className={`flex-grow mb-auto bg-black-500 ${inter.className} p-0 xl:p-7`}
         
       >
-        <div className="flex flex-row xl:m-4  h-max flex-auto flex-wrap">
+        <div itemScope itemType="http://schema.org/SoftwareApplication" className="flex flex-row xl:m-4  h-max flex-auto flex-wrap">
           <div className="xl:mr-2 p-1.5 xl:mt-24 mt-0 h-auto ">
             <TiltImage url="/wallpaper.jpeg" />
           </div>
@@ -31,7 +31,7 @@ export default function Home() {
               animate={{ x: xValue }}
               transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
             >
-              <div className="xl:p-1.5 text-2xl xl:text-6xl text-left">
+              <div className="xl:p-1.5 text-2xl xl:text-6xl text-left" itemProp="name">
                 Dino AR
               </div>
               <div className="p-1.5 xl:text-xl xl:mt-24 text-base text-left  w-full">
