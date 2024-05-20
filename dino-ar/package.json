@@ -1,17 +1,19 @@
 {
-  "name": "dino-ar",
+  "name": "Dino-Ar",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/font": "^14.2.3",
     "framer-motion": "^11.2.4",
     "next": "14.2.3",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-iframe": "^1.8.5",

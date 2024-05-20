@@ -24,8 +24,15 @@ export default function RootLayout({
         <meta name="description" content="Established in 2024" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://dino-ar-web.vercel.app" />
-        <title>DinoAR</title>
         <link rel="icon" href="/image/favicon.ico" sizes="any" />
+        <title>Dino-AR</title>
+        
+        {/* Open Graph Meta Tags for social media */}
+        <meta property="og:title" content="Dino-AR" />
+        <meta property="og:description" content="Established in 2024" />
+        <meta property="og:url" content="https://dino-ar-web.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://dino-ar-web.vercel.app/dinosaurs" />
       </Head>
       <body className={inter.className}>
         {/*Ban inspect elements*/}
